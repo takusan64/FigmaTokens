@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "tokne:genJson": "./node_modules/.bin/token-transformer tokens.json output.json",
+    "token:genToken": "style-dictionary build --config style-dictionary.config.json",
+    "token": "npm run tokne:genJson && npm run token:genToken"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.7.1",
+    "token-transformer": "^0.0.25"
+  }
+}
